@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">✨ Tic-Tac-Toe ✨</h1>
+
+    <div class="mode">
+      <label>
+        <input type="radio" name="mode" value="pvp" checked> 👫 Player vs Player
+      </label>
+      <label>
+        <input type="radio" name="mode" value="ai"> 🤖 Player vs Computer
+      </label>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <div class="message" id="message"></div>
+
+    <div class="scoreboard">
+      <p>❌ Player X: <span id="scoreX">0</span></p>
+      <p>⭕ Player O: <span id="scoreO">0</span></p>
+      <p>🤝 Draws: <span id="scoreDraw">0</span></p>
+    </div>
+
+    <button onclick="restartGame()">🔄 Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
